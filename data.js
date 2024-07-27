@@ -1,25 +1,21 @@
 const data = {
-    "Leitura e Interpretação de Desenho Técnico": { //mexido
+    "Cálculo I": { //mexido
         "periodo": 1,
         "requisito": []
     },
-    "Cálculo I": {
+    "Geometria Analítica": {
         "periodo": 1,
         "requisito": []       
+    },
+    "Leitura e Interpretação de Desenho Técnico": {
+        "periodo": 1,
+        "requisito": []
     },
     "Fundamentos de Química para Engenharia I-B": {
         "periodo": 1,
         "requisito": []
     },
-    "Biologia Celular": {
-        "periodo": 1,
-        "requisito": []
-    },
-    "Geometria Analítica": { //mexido
-        "periodo": 1,
-        "requisito": []
-    },
-    "Leitura e Produção de Textos Acadêmicos": { //ok
+    "Biologia Celular": { //mexido
         "periodo": 1,
         "requisito": []
     },
@@ -27,9 +23,16 @@ const data = {
         "periodo": 1,
         "requisito": []
     },
-    "Introdução à Ciência dos Materiais": { //ok
+    "Comunicação Científica em Biotecnologia": { //ok
         "periodo": 1,
         "requisito": []
+    },
+    "Cálculo II": { //ok
+        "periodo": 2,
+        "requisito": [
+            "Cálculo I",
+            "Geometria Analítica"
+        ]
     },
     "Álgebra Linear": {
         "periodo": 2,
@@ -37,24 +40,21 @@ const data = {
             "Geometria Analítica"
         ]
     },
-    "Cálculo II": {
-        "periodo": 2,
-        "requisito": [
-            "Cálculo I",
-            "Geometria Analítica"
-        ]
-    },
     "Física I": {
         "periodo": 2,
         "requisito": []
     },
-    "Química Geral Experimental": {
+    "Física Experimental I": {
+        "periodo": 2,
+        "requisito": []
+    },
+    "Fundamentos de Química para Engenharia II-A": {
         "periodo": 2,
         "requisito": [
             "Fundamentos de Química para Engenharia I-B"
         ]
     },
-    "Fundamentos de Química para Engenharia II-A": {
+    "Química Geral Experimental": {
         "periodo": 2,
         "requisito": [
             "Fundamentos de Química para Engenharia I-B"
@@ -66,29 +66,17 @@ const data = {
             "Biologia Celular"
         ]
     },
+    "Microbiologia Experimental": {
+        "periodo": 2,
+        "requisito": [
+            "Microbiologia"
+        ]
+    },
     "Engenharia Genética": {
         "periodo": 2,
         "requisito": [
             "Biologia Celular"
         ]
-    },
-    "Física Experimental I": {
-        "periodo": 2,
-        "requisito": []
-    },
-    "Microbiologia Experimental": {
-        "periodo": 2,
-        "requisito": []
-    },
-    "Introdução aos Métodos Numéricos e Computacionais": {
-        "periodo": 3,
-        "requisito": [
-            "Geometria Analítica"
-        ]
-    },
-    "Balanço de Massa e Energia": {
-        "periodo": 3,
-        "requisito": []
     },
     "Cálculo III": {
         "periodo": 3,
@@ -96,24 +84,35 @@ const data = {
             "Cálculo II"
         ]
     },
-    "Mecânica": {
-        "periodo": 3,
-        "requisito": [
-            "Cálculo II",
-            "Física I"
-        ]
-    },
     "Física II": {
         "periodo": 3,
         "requisito": [
-            "Cálculo II",
+            "Cálculo I",
             "Física I"
         ]
     },
-    "Estatística": {
+    "Mecânica": {
         "periodo": 3,
         "requisito": [
+            "Física I",
             "Cálculo II"
+        ]
+    },
+    "Introdução aos Métodos Numéricos e Computacionais": {
+        "periodo": 3,
+        "requisito": [
+            "Geometria Analítica",
+            "Cálculo II"
+        ]
+    },
+    "Balanços de Massa e Energia": {
+        "periodo": 3,
+        "requisito": []
+    },
+    "Química Bioinorgânica": {
+        "periodo": 3,
+        "requisito": [
+            "Fundamentos de Química para Engenharia II-A"
         ]
     },
     "Química Orgânica Fundamental": {
@@ -132,27 +131,8 @@ const data = {
     "Física III": {
         "periodo": 4,
         "requisito": [
-            "Física II"
-        ]
-    },
-    "Termodinâmica Química Aplicada I": {
-        "periodo": 4,
-        "requisito": [
-            "Cálculo II",
-            "Balanço de Massa e Energia"
-        ]
-    },
-    "Química Analítica para Engenharia": {
-        "periodo": 4,
-        "requisito": [
-            "Fundamentos de Química para Engenharia II-A",
-            "Química Geral Experimental"
-        ]
-    },
-    "Estrutura e Química de Materiais Lignocelulósicos": {
-        "periodo": 4,
-        "requisito": [
-            "Química Orgânica Fundamental"
+            "Física II",
+            "Cálculo II"
         ]
     },
     "Física Experimental III": {
@@ -161,9 +141,26 @@ const data = {
             "Física Experimental I"
         ]
     },
-    "Gestão de Negócios": {
+    "Termodinâmica Química Aplicada I": {
         "periodo": 4,
-        "requisito": []
+        "requisito": [
+            "Balanços de Massa e Energia",
+            "Cálculo II",
+            "Física II"
+        ]
+    },
+    "Fenômenos de Transporte I": {
+        "periodo": 4,
+        "requisito": [
+            "Mecânica",
+            "Cálculo III"
+        ]
+    },
+    "Estrutura e Química de Materiais Lignocelulósicos": {
+        "periodo": 4,
+        "requisito": [
+            "Química Orgânica Fundamental"
+        ]
     },
     "Bioquímica I": {
         "periodo": 4,
@@ -174,12 +171,14 @@ const data = {
     },
     "Bioquímica Experimental I": {
         "periodo": 4,
-        "requisito": []
+        "requisito": [
+            "Bioquímica I"
+        ]
     },
-    "Engenharia da Qualidade": {
+    "Estatística": {
         "periodo": 5,
         "requisito": [
-            "Estatística"
+            "Cálculo II"
         ]
     },
     "Eletricidade Aplicada": {
@@ -188,11 +187,28 @@ const data = {
             "Física III"
         ]
     },
-    "Fenômenos de Transporte I": {
+    "Laboratório de Eletricidade": {
         "periodo": 5,
         "requisito": [
-            "Mecânica",
-            "Cálculo III"
+            "Física Experimental III"
+        ]
+    },
+    "Introdução à Ciência dos Materiais": {
+        "periodo": 5,
+        "requisito": []
+    },
+    "Operações Unitárias I": {
+        "periodo": 5,
+        "requisito": [
+            "Fenômenos de Transporte I"
+        ]
+    },
+    "Fenômenos de Transporte II": {
+        "periodo": 5,
+        "requisito": [
+            "Fenômenos de Transporte I",
+            "Cálculo IV",
+            "Física II"
         ]
     },
     "Termodinâmica Química Aplicada II": {
@@ -201,22 +217,16 @@ const data = {
             "Termodinâmica Química Aplicada I"
         ]
     },
-    "Análise Instrumental": {
+    "Bioquímica II": {
         "periodo": 5,
         "requisito": [
-            "Química Analítica para Engenharia"
+            "Bioquímica I"
         ]
     },
-    "Laboratório de Eletricidade": {
+    "Bioquímica Experimental II": {
         "periodo": 5,
         "requisito": [
-            "Física Experimental III"
-        ]
-    },
-    "Tecnologia de Biopolímeros": {
-        "periodo": 5,
-        "requisito": [
-            "Química Orgânica Fundamental"
+            "Bioquímica II"
         ]
     },
     "Tecnologia de Conversão de Biomassa Vegetal": { //mexido
@@ -225,17 +235,23 @@ const data = {
             "Estrutura e Química de Materiais Lignocelulósicos"
         ]
     },
-    "Bioquímica II": {
-        "periodo": 5,
+    "Fenômenos de Transporte III": {
+        "periodo": 6,
         "requisito": [
-            "Bioquímica I",
-            "Bioquímica Experimental I"
+            "Fenômenos de Transporte II"
         ]
     },
-    "Bioquímica Experimental II": { //mexido
-        "periodo": 5,
+    "Operações Unitárias II": { //mexido
+        "periodo": 6,
         "requisito": [
-            "Bioquímica I"
+            "Fenômenos de Transporte II"
+        ]
+    },
+    "Tecnologia de Processos Fermentativos": {
+        "periodo": 6,
+        "requisito": [
+            "Bioquímica II",
+            "Microbiologia"
         ]
     },
     "Fundamentos de Engenharia Econômica": {
@@ -244,40 +260,36 @@ const data = {
             "Estatística"
         ]
     },
-    "Fenômenos de Transporte II": {
-        "periodo": 6,
-        "requisito": [
-            "Fenômenos de Transporte I"
-        ]
-    },
-    "Tecnologia de Processos Fermentativos": { //mexido
-        "periodo": 6,
-        "requisito": [
-            "Microbiologia"
-        ]
-    },
-    "Laboratório de Engenharia Química I": {
-        "periodo": 6,
-        "requisito": [
-            "Fenômenos de Transporte I"
-        ]
-    },
-    "Cinética Química Aplicada": {
-        "periodo": 6,
-        "requisito": [
-            "Termodinâmica Química Aplicada II"
-        ]
-    },
-    "Operações Unitárias I": { //mexido
-        "periodo": 6,
-        "requisito": [
-            "Fenômenos de Transporte I"
-        ]
-    },
-    "Engenharia de Segurança do  Trabalho e Biossegurança": {
+    "Engenharia de Segurança do Trabalho e Biossegurança": { //mexido
         "periodo": 6,
         "requisito": [
             "Engenharia Genética"
+        ]
+    },
+    "Tecnologia de Biopolímeros": {
+        "periodo": 6,
+        "requisito": [
+            "Química Orgânica Fundamental"
+        ]
+    },
+    "Química Analítica Aplicada a Bioprocessos": {
+        "periodo": 6,
+        "requisito": [
+            "Química Geral Experimental",
+            "Fundamentos de Química para Engenharia II-A",
+            "Bioquímica Experimental I"
+        ]
+    },
+    "Operações Unitárias III": { //mexido
+        "periodo": 7,
+        "requisito": [
+            "Fenômenos de Transporte III"
+        ]
+    },
+    "Engenharia Bioquímica I": {
+        "periodo": 7,
+        "requisito": [
+            "Tecnologia de Processos Fermentativos"
         ]
     },
     "Enzimologia": {
@@ -288,62 +300,46 @@ const data = {
             "Microbiologia"
         ]
     },
-    "Fenômenos de Transporte III": {
+    "Genética e Biotecnologia Vegetal": {
         "periodo": 7,
         "requisito": [
-            "Fenômenos de Transporte II"
+            "Bioquímica II",
+            "Microbiologia",
+            "Engenharia Genética"
         ]
     },
-    "Operações Unitárias II": {
+    "Tratamento Biológico de Efluentes": {
         "periodo": 7,
         "requisito": [
-            "Fenômenos de Transporte II"
+            "Microbiologia"
         ]
     },
-    "Engenharia Bioquímica I": { //mexido
+    "Processos Bioquímicos Industriais": { //mexido
         "periodo": 7,
         "requisito": [
+            "Operações Unitárias II",
             "Tecnologia de Processos Fermentativos"
         ]
     },
-    "Laboratório de Engenharia Química II": {
+    "Empreendedorismo Tecnológico": {
         "periodo": 7,
-        "requisito": [
-            "Fenômenos de Transporte II"
-        ]
+        "requisito": []
     },
-    "Genética e Biotecnologia Vegetal": {
+    "Introdução ao Gerenciamento de Projetos Ambientais": {
         "periodo": 7,
-        "requisito": [
-            "Engenharia Genética",
-            "Bioquímica II"
-        ]
+        "requisito": []
     },
-    "Fundamentos de Administração da Produção": {
-        "periodo": 7,
-        "requisito": [
-            "Gestão de Negócios"
-        ]
-    },
-    "Genética e Biotecnologia Vegetal": {
-        "periodo": 7,
-        "requisito": [
-            "Engenharia Genética",
-            "Bioquímica II"
-        ]
-    },
-    "Engenharia Ambiental": {
-        "periodo": 7,
-        "requisito": [
-            "Bioquímica I"
-        ]
-    },
-    "Instrumentação e Controle de Bioprocessos": {
+    "Laboratório de Engenharia Química III": {
         "periodo": 8,
         "requisito": [
-            "Tecnologia de Processos Fermentativos",
-            "Eletricidade Aplicada",
-            "Fenômenos de Transporte II"
+            "Operações Unitárias I",
+            "Operações Unitárias II"
+        ]
+    },
+    "Engenharia Bioquímica II": {
+        "periodo": 8,
+        "requisito": [
+            "Engenharia Bioquímica I"
         ]
     },
     "Modelagem e Simulação de Processos Biotecnológicos": {
@@ -353,18 +349,17 @@ const data = {
             "Operações Unitárias II"
         ]
     },
-    "Processos Bioquímicos Industriais": {
+    "Estatística em Bioprocessos": {
         "periodo": 8,
         "requisito": [
-            "Tecnologia de Processos Fermentativos",
-            "Operações Unitárias II"
+            "Estatística",
+            "Processos Bioquímicos Industriais",
         ]
     },
-    "Laboratório de Engenharia Química III": {
+    "Reatores Bioquímicos": {
         "periodo": 8,
         "requisito": [
-            "Operações Unitárias I",
-            "Operações Unitárias II"
+            "Engenharia Bioquímica I",
         ]
     },
     "Laboratório de Engenharia Bioquímica": {
@@ -374,60 +369,26 @@ const data = {
             "Enzimologia"
         ]
     },
-    "Reatores Bioquímicos": {
+    "Instrumentação e Controle de Bioprocessos": {
         "periodo": 8,
         "requisito": [
-            "Cinética Química Aplicada",
-            "Engenharia Bioquímica I"
-        ]
-    },
-    "Engenharia Bioquímica II": {
-        "periodo": 8,
-        "requisito": [
-            "Engenharia Bioquímica I"
-        ]
-    },
-    "Operações Unitárias III": {
-        "periodo": 8,
-        "requisito": [
-            "Fenômenos de Transporte III"
-        ]
-    },
-    "Tecnologia de Bebidas": {
-        "periodo": 9,
-        "requisito": [
+            "Fenômenos de Transporte II",
+            "Eletricidade Aplicada",
             "Tecnologia de Processos Fermentativos"
         ]
     },
-    "Tecnologia de Bebidas Experimental": {
+    "Solução de Problemas de Engenharia": {
+        "periodo": 8,
+        "requisito": [
+            "Engenharia Genética",
+            "Enzimologia",
+            "Tecnologia de Conversão de Biomassa Vegetal"
+        ]
+    },
+    "Projeto Final de Curso": {
         "periodo": 9,
         "requisito": [
-            "Tecnologia de Processos Fermentativos"
+            "Solução de Problemas de Engenharia"
         ]
     },
-    "Estatística em Bioprocessos": {
-        "periodo": 9,
-        "requisito": [
-            "Processos Bioquímicos Industriais",
-            "Estatística"
-        ]
-    },
-    "Trabalho de Conclusão de Curso I": {
-        "periodo": 9,
-        "requisito": [
-            "Engenharia Bioquímica I"
-        ]
-    },
-    "Tecnologia do Cultivo de Células Animais (eletiva)": {
-        "periodo": 10,
-        "requisito": [
-            "Engenharia Bioquímica I"
-        ]
-    },
-    "Trabalho de Conclusão de Curso II": {
-        "periodo": 10,
-        "requisito": [
-            "Trabalho de Conclusão de Curso I"
-        ]
-    }
 }
